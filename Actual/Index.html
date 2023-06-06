@@ -21,8 +21,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
   
   <!-- Main CSS Files -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -68,16 +67,16 @@
         </div>
         <div class = "row">
           <div class = "col-lg-6 col-md-6 col-sm-6 portfolio-item ">
-            <img src="assets/img/Placeholder-pink.png" class="img-fluid rounded" alt="placeholder-img " >
+            <img src="assets/img/Placeholder.png" class="img-fluid rounded" alt="placeholder-img " >
           </div>
           <div class = "col-lg-6 col-md-6 col-sm-6 portfolio-item">
-            <img src="assets/img/Placeholder-pink.png" class="img-fluid portfolio-img portfolio-item rounded" alt="placeholder-img" >
+            <img src="assets/img/Placeholder.png" class="img-fluid portfolio-img portfolio-item rounded" alt="placeholder-img" >
           </div>
           <div class = "col-lg-6 col-md-6 col-sm-6 portfolio-item">
-            <img src="assets/img/Placeholder-pink.png" class="img-fluid portfolio-img portfolio-item rounded" alt="placeholder-img" >
+            <img src="assets/img/Placeholder.png" class="img-fluid portfolio-img portfolio-item rounded" alt="placeholder-img" >
           </div>
           <div class = "col-lg-6 col-md-6 col-sm-6 portfolio-item">
-            <img src="assets/img/Placeholder-pink.png" class="img-fluid portfolio-img portfolio-item rounded" alt="placeholder-img" >
+            <img src="assets/img/Placeholder.png" class="img-fluid portfolio-img portfolio-item rounded" alt="placeholder-img" >
           </div>
         </div>
       </div>
@@ -88,20 +87,20 @@
     <section id="about" class="about">
       <div class="container">
         <div class="row">
-          <div class="section-title col-lg-5 fade-left">
+          <div class="section-title col-lg-7 fade-left">
             <h2>About Me</h2>
             <p>My name is Joshua King, I am a year 13 student enrolled at Kamo High School in Whangarei. In my schooling I have studied digital tehcnologies and information, where I have done work with both designing digital outcomes and developing. 
               With my work at school I have worked with many different programming languages and software in order to create my projects. This spans from photoshop and other adobe design software to blender and 3d modelling
               I can also somewhat use many different programming languages although I wouldnt say Im fluent in any coding language as of now, with HTML being my most proficient but I have also worked with python and C in the past.
             </p>
           </div>
-          <div class="col-lg-5-5 fade-right about-item">
+          <div class="col-lg-5 fade-right about-item">
             <img src="assets/img/Mr_Clean_Hero_For_Our_Times_Cropped.jpg" class="img-fluid about-item rounded float-end" alt="Mr Clean">
           </div>
 
 
           <!-- Services Subsection -->
-          <div class="col-lg-5 fade-left about-item">
+          <div class="col-lg-6 fade-left about-item">
             <div class="section-title">
               <h2>What I offer</h2>
               <p>Although this isnt my actual portfolio and just a project made for school, below is a list of services I could hypothetically offer.</p>
@@ -122,7 +121,7 @@
           <!-- Services Subsection Ends -->
 
           <!-- Hobbies Subsection Begins -->
-          <div class="col-lg-5 fade-right about-item">
+          <div class="col-lg-6 fade-right about-item">
             <div class="section-title">
               <h2>My Hobbies</h2>
               <p>Below is a list of some of the sports, hobbies and extra curricular activites I enjoy doing in my spare time.</p>
@@ -148,22 +147,55 @@
     <!-- Contact Section Begins -->
     <section id="contact" class="contact">
       <div class="container">
-        <div class="col-lg-5 fade-left about-item">
-          <div class="section-title">
-            <h2>Contact</h2>
-            <p>This would be my page which has all the information needed to contact me including: My number(Although for personal reasons I wont provide my actual number), My general location, My Email and also a way to contact me directly from this page.</p>
-
+        <div class="row">
+          <div class="col-lg-6 fade-left about-item">
+            <div class="section-title">
+              <h2>My Info</h2>
+              <p class="about-item">Below is a list of 'My info' for the user to contact me. Although since this isnt my actual portfolio website I havent provided my personal details.</p>
+            </div>
+            <ul>
+              <li>Landline: 555-2368</li>
+              <p></p>
+              <li>Mobile: (000) 000-0000</li>
+              <p></p>
+              <li>Email: someone@exampl.com </li>
+              <p></p>
+              <li>City: Whangarei</li>
+              <p></p>
+              <li>Address: 1 Wilkinson Avenue, Kamo, Whangārei 0112</li>
+            </ul>
           </div>
-          <div class="col-lg-7 fade-right about-item section-bg">
+          <!-- Services Subsection Ends -->
+    
+          <!-- Hobbies Subsection Begins -->
+          <div class="col-lg-6 fade-right about-item">
+            <div class="section-title">
+              <h2>Contact Form</h2>
+              <p>Below is a form that allows the user to contact me directly from the website through the use of PHP forms.</p>
 
+            </div>
+            <form method="post" action="AiForm.php">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="inquiry">Inquiry:</label>
+                <textarea class="form-control" id="inquiry" name="inquiry" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
-
-        </div>  
-
-
-
+          </div>
+        </div>
       </div>
     </section>
+  </div>
+
 
 
 
@@ -175,11 +207,6 @@
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
